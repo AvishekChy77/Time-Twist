@@ -69,19 +69,6 @@ const Register = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text text-black">Occupation</span>
-              </label>
-              <input
-                type="text"
-                {...register("occupation")}
-                placeholder="Your occupation"
-                name="occupation"
-                className="input input-bordered bg-white"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
                 <span className="label-text text-black">Photo</span>
               </label>
               <input

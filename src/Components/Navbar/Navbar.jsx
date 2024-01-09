@@ -40,16 +40,29 @@ const Navbar = () => {
       >
         Contact Us
       </NavLink>
-      <NavLink
-        className={`nav ${
-          click
-            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
-            : ""
-        }`}
-        to="/register"
-      >
-        Register
-      </NavLink>
+      {user ? (
+        <NavLink
+          className={`nav ${
+            click
+              ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+              : ""
+          }`}
+          to="/dashboard/manageTask"
+        >
+          Dashboard
+        </NavLink>
+      ) : (
+        <NavLink
+          className={`nav ${
+            click
+              ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+              : ""
+          }`}
+          to="/register"
+        >
+          Register
+        </NavLink>
+      )}
     </>
   );
   return (
@@ -69,12 +82,30 @@ const Navbar = () => {
         className={`md:flex md:mt-5 navs ${click ? "left-0" : "left-[-100%]"}`}
       >
         <ul className="text-base lg:text-lg font-medium flex gap-4 lg:gap-10 xl:gap-16 Navbar">
+          {user && (
+            <label className="btn md:hidden btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src={user.photoURL} alt="" />
+              </div>
+            </label>
+          )}
           {Navbar}
-          <NavLink className=" md:hidden" to="/login">
-            <button className="btn border-none btn-sm h-10 rounded-full px-8  text-white bg-gradient-to-r from-indigo-500 to-purple-500">
-              Login
-            </button>
-          </NavLink>
+          <div className=" md:hidden">
+            {user?.email ? (
+              <button
+                onClick={handleSignOut}
+                className="btn border-none btn-sm h-10 rounded-full px-8  text-white bg-gradient-to-r from-indigo-500 to-purple-500"
+              >
+                Logout
+              </button>
+            ) : (
+              <NavLink to="/login">
+                <button className="btn border-none btn-sm h-10 rounded-full px-8  text-white bg-gradient-to-r from-indigo-500 to-purple-500">
+                  Login
+                </button>
+              </NavLink>
+            )}
+          </div>
         </ul>
       </div>
       <div onClick={() => setClick(!click)} className="flex mt-3 md:hidden">
