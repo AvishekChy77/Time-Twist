@@ -43,6 +43,7 @@ const Router = createBrowserRouter([
             <ManageTask />
           </PrivateRoutes>
         ),
+        loader: () => fetch("/tasks.json"),
       },
     ],
   },

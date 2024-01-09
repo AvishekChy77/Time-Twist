@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Project A",
+    "description": "Description for Project A",
+    "tasks": ["Task A1", "Task A2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Project B",
+    "description": "Description for Project B",
+    "tasks": ["Task B1", "Task B2"],
+    "timeCount": 2,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Project C",
+    "description": "Description for Project C",
+    "tasks": ["Task C1", "Task C2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Project D",
+    "description": "Description for Project D",
+    "tasks": ["Task D1", "Task D2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Project E",
+    "description": "Description for Project E",
+    "tasks": ["Task E1", "Task E2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 6,
+    "name": "Project F",
+    "description": "Description for Project F",
+    "tasks": ["Task F1", "Task F2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 7,
+    "name": "Project G",
+    "description": "Description for Project G",
+    "tasks": ["Task G1", "Task G2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 8,
+    "name": "Project H",
+    "description": "Description for Project H",
+    "tasks": ["Task H1", "Task H2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 9,
+    "name": "Project I",
+    "description": "Description for Project I",
+    "tasks": ["Task I1", "Task I2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  },
+  {
+    "id": 10,
+    "name": "Project J",
+    "description": "Description for Project J",
+    "tasks": ["Task J1", "Task J2"],
+    "timeCount": 0,
+    "email": "avishekchowdhury71@gmail.com"
+  }
+]
